@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Clase7.Models.Categoria>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listado de Categorías</h2>
+
+<p>
+    @Html.ActionLink("Nueva Categoría", "Create", null, new {@class = "btn btn-primary"})
+</p>
+<table class="table table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCategoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCategoria)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.ActionLink("Modificar", "Edit", new { id=item.IdCategoria }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Ver detalle", "Details", new { id=item.IdCategoria }, new { @class = "btn btn-warning" }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.IdCategoria }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>
