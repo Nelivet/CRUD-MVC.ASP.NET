@@ -1,8 +1,6 @@
 # CRUD-MVC.net    :grinning:
 ________________________________________________________________________________________________________________________________________________________________________________________________
-Este proyecto es un ejemplo de una aplicación web desarrollada con ASP.NET y C# siguiendo el patrón Modelo-Vista-Controlador (MVC). 
-La aplicación implementa operaciones CRUD (Crear, Leer, Actualizar, Eliminar) utilizando una base de datos SQL Server y 
-aprovecha el uso de procedimientos almacenados para interactuar con la base de datos. :grinning:
+This project is an example of a web application developed with ASP.NET and C# following the Model-View-Controller (MVC) pattern. The application implements CRUD (Create, Read, Update, Delete) operations using a SQL Server database and leverages the use of stored procedures to interact with the database. 😀 :grinning:
 ________________________________________________________________________________________________________________________________________________________________________________________________
 
 [![listaCte.png](https://i.postimg.cc/jS7k1mPx/listaCte.png)](https://postimg.cc/bZqTD6mW)
